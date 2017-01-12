@@ -40,11 +40,19 @@
 
 ;; Reduce the number of characters before company kicks in
 (setq company-minimum-prefix-length 1)
+
+;; install racer : 
+;; git clone https://github.com/phildawes/racer.git
+;; cd ~/racer
+;; cargo build --release
+;; mv ~/racer/release/racer /usr/local/bin
+;; rm -rf ~/racer
+
 ;; Set path to racer binary
 (setq racer-cmd "/usr/local/bin/racer")
 
 ;; Set path to rust src directory
-(setq racer-rust-src-path "/Users/yidianhanmang/.rust/src/")
+(setq racer-rust-src-path "/home/yidianhanmang/.rust/src/")
 
 ;; Load rust-mode when you open .rs files
 (add-to-list 'auto-mode-alist '("\.rs\'" . rust-mode))
